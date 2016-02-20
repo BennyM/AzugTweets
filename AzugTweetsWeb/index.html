@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="">
+        <meta name="author" content="Info Support">
+
+        <title>HashtagBattle</title>
+        <link href="//cdnjs.cloudflare.com/ajax/libs/tether/1.1.1/css/tether.css" rel="stylesheet" />
+        <link href="//cdnjs.cloudflare.com/ajax/libs/tether/1.1.1/css/tether-theme-basic.min.css" rel="stylesheet" />
+
+        <!-- Bootstrap core CSS -->
+        <link href="Content/bootstrap.css" rel="stylesheet" />
+
+        <!-- Custom styles for this template -->
+        <link href="Content/style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <div class="main">
+                <h1 class="page-header">HashtagBattle</h1>
+
+                <h2>Contestants</h2>
+                <div class="row">
+                    <div class="col-md-8">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>Hashtag</th>
+                                <th>Count</th>
+                            </tr>
+                            </thead>
+                            <tbody id="hashtagcontainer">
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-md-4">
+                        <ul id="tweets">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="Scripts/jquery-2.2.0.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.1.1/js/tether.js"></script>
+        <script src="Scripts/bootstrap.min.js"></script>
+        <script src="Scripts/jquery.signalR-1.2.2.js"></script>
+    <script src="signalr/hubs"></script>
+
+        <script>
+window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "http://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
+        <script src="app.js"></script>
+    </body>
+</html>
