@@ -125,8 +125,6 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\style.css" />
-    <Content Include="Content\TextFile1 - Copy.txt" />
-    <Content Include="Content\TextFile1.txt" />
     <Content Include="packages.config" />
     <Content Include="Content\bootstrap.min.css.map" />
     <Content Include="Content\bootstrap.css.map" />
@@ -148,8 +146,6 @@
     <Content Include="index.html" />
     <Content Include="Scripts\jquery.signalR-1.2.2.js" />
     <Content Include="Scripts\jquery.signalR-1.2.2.min.js" />
-    <Content Include="Scripts\TextFile1 - Copy.txt" />
-    <Content Include="Scripts\TextFile1.txt" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
